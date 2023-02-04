@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* first section header */
+
+header{
+    height: 500px;
+    width:100%;
+    background-image: url(./images/design-assets/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.logomenu{
+    display: inline-flex;
+    height: 50px;
+    margin-top:0;
+}
+.logo-name{
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    padding-left: 100px;
+    object-fit: contain;
+}
+.logo{
+   flex-wrap: wrap;
+}
+.logoname{
+    display: inline-flex;
+    width: 80px;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+}
+.menu{
+    display: inline-flex;
+    color: white;
+    list-style: none;
+    padding-top:10px;
+    gap:30px;
+    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 1rem; 
+    justify-content:flex-start;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    cursor: pointer;
+    color: lightseagreen;
+}
+/* a:visited{
+    color: aqua;
+} */
+/* .description{
+    color: white;
+    height: 400px;
+    padding: 30px;
+    text-align: center;
+    row-gap: 20px;
+    display:flex;
+    flex-direction: row;
+} */
+.heading{
+    display:flex;
+    height: 80px;
+    color: white;
+    text-transform:capitalize;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+}
+.lineone{
+    display: flex;
+    border-top: 1px solid aqua;
+    width:50px;
+    justify-content: center;
+    align-self:center;
+    margin-left: 600px;
+
+}
+.introduction{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+}
+button.learn{
+    display:flex;
+    border: 1px solid aqua;
+    color: aqua;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 10px;
+    width:fit-content;
+    align-self: center;
+    margin-bottom: 150px;
+    margin-left: 600px;
+    
+
+}
+
+/* second section story */
+.story{
+    display: flex;
+    height: 300px;
+    margin: 50px 150px 50px 300px;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.largelogo{
+    height:200px;
+}
+
+h3{
+    text-transform: uppercase;
+    padding: 0 0 30px 30px;  
+}
+
+.storydescription{
+    padding-left: 30px;
+    padding-bottom: 0;
+    color: grey;
+    height: 75px;
+}
+
+.storydescriptiontwo{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: grey;
+    height: 75px;
+}
+
+button.learnm{
+    border: 1px solid aqua;
+    color: aqua;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+/* third section video */
+
+
+.video{
+    background-image: url(./images/design-assets/bgk-middle.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.playimage{
+    margin-left:40px;
+    margin-top: 20px;
+    height: 70px;
+}
+.watch{
+    color: white;
+    text-transform: uppercase;
+    margin-left:40px;
+    padding-top:20px;
+    gap:20px;
+}
+
+/* forth section experties */
+
+
+.experties{
+    display:flex;
+    height:500px;
+    flex-direction: column;
+    
+}
+
+.experts{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    padding:5px 0 0 0;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.line-two{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+    width: 50px;
+    margin-left: 550px;
+    margin-top: 3px;
+}
+.area-experts{
+    display: flex;
+    padding: 30px;
+    margin-top:0;
+    margin-left: 200px;
+    height: 400px;
+    justify-content:center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width:80%;
+    
+}
+
+
+.topic{
+    text-transform: uppercase;
+    font-weight:bold;
+    color: rgb(68, 67, 67);
+    padding: 10px;
+    font-size: 0.75rem;
+    text-align: center;
+    
+}
+
+.details{
+    color: rgb(68, 67, 67);
+    padding: 10px;
+    font-size: 0.75rem;
+    text-align: center;
+    
+}
+
+.web{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    flex-basis:300px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:1;
+
+}
+
+.branding{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    flex-basis:300px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:2;
+}
+
+.mob{
+    border-bottom: 1px solid gray;
+    flex-basis:300px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:3;
+}
+
+.search{
+    border-right: 1px solid gray;
+    flex-basis:300px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:4;
+}
+
+.game{
+    border-right: 1px solid gray;
+    flex-basis:300px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:5;
+}
+
+.love{ 
+    flex-basis:300px;
+    text-align: center; 
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    order:6;
+    
+}
+
+/* fifth section cards */
+
+
+.cards{
+    background-image: url(./images/design-assets/bgk-header.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    display: flex;
+    flex-direction: column;
+}
+/* .meet{
+    color: white;
+    margin-top: 0;
+    border-top: 0;
+    justify-content:center;
+
+} */
+.amazingteam{
+    display: flex;
+    padding-top:30px ;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    color: white;
+    justify-content:center;
+
+}
+
+.linemeet{
+    display: flex;
+    color: white;
+    justify-content:center;
+
+}
+
+.line-three{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(203, 201, 201);
+    width: 50px;
+    margin-left: 550px;
+    margin-top: 3px;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width:70%;
+    height: 300px;
+}
+p.box{
+   
+    height: 150px;
+    width:120px;
+    margin: 10px;
+    background-color: white;
+    justify-content: stretch;
+    justify-self: flex-end;
+    
+}
+
+
+.title{
+    color: white;
+    font-size: 0.75rem;
+    width:120px;
+    margin: 10px;
+    border: 1px solid white;
+    text-align: center;
+    justify-self: flex-start;
+    padding: 8px;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+}
+.join{
+    color: white;
+    padding-bottom: 20px;
+    align-self: center;
+}
+button.hiring{
+    display: flex;
+    justify-content: center;
+    border: 1px solid aqua;
+    color: aqua;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: transparent;
+    width:fit-content;
+    align-self:center;
+}
+
+/* sith section feedback */
+
+
+.contact{
+    display: flex;
+    width:100%;
+    height: 500px;
+}
+
+.feedback{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* seventh section footer */
+footer{
+    background-image: url(./images/design-assets/bgk-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    background-origin: border-box;
+}
+
+.up{
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.down{
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+
+}

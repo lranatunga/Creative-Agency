@@ -113,78 +113,69 @@ button.learn{
 
 /* second section story */
 
-
-.story{
-    /* width: 918px;
-    height: 300px;
-    display:flex;
-    justify-content: center; */
-    border: 1px solid red;
+.section-two{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-
-    
+    height: 300px;
+}
+.story{
+    display: flex;
+    flex-direction: row;
+    width:918px;
+    align-self: center;
+    height: 300px;
+    justify-content: flex-end;
+  
 }
 
 .largelogo{
-    /* height:200px;
+    height:200px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 20px;
-    width:459px; */
-    border: 1px solid red;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-right: 20px;
 }
 
 .longstory{
-    border: 1px solid red;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:459px; */
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:518px;
 }
 
 .ourstory{
-    border: 1px solid red;
-    /* text-transform: uppercase;
-    padding: 0 0 30px 30px;  
+    text-transform: uppercase;
+    padding-top: 30px;  
     font-family: 'Playfair Display', serif;
-    color: gray; */
+    color: rgb(107, 107, 107);
 }
 
 .storydescription{
-    border: 1px solid red;
-    /* padding-left: 30px;
-    padding-bottom: 0;
     color: grey;
     height: 75px;
-    font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 
 .storydescriptiontwo{
-    border: 1px solid red;
-    /* padding-left: 30px;
-    padding-bottom: 30px;
     color: grey;
     height: 75px;
-    font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 
 button.learnm{
-    border: 1px solid red;
-    /* display:flex;
+    display:flex;
     border: 1px solid aqua;
     color: aqua;
     text-transform: uppercase;
     padding: 10px;
     background-color: transparent;
-    margin-top: 10px;
     width:fit-content;
-    align-self: center;
-    font-family: 'Roboto', sans-serif; */
+    align-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
 }
 
 /* third section video */
@@ -231,9 +222,7 @@ button.learnm{
     display:flex;
     height:500px;
     flex-direction: column;
-    border: 1px solid red;
-    width: 918px;
-    
+    width: 100%;
 }
 
 .experts{
@@ -241,6 +230,9 @@ button.learnm{
     justify-content: center;
     font-family:'Playfair Display', serif;
     padding-top: 10px;
+    color: rgb(107, 107, 107);
+    width: 918px;
+    align-self: center;
 }
 
 .line{
@@ -249,35 +241,30 @@ button.learnm{
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-
+    align-self: center;
+    width:918px;
 }
 
 .line-two{
     display: flex;
     justify-content: center;
     border-top: 1px solid gray;
-    width: 50px;
-    margin-left: 550px;
-    margin-top: 3px;
+    width:50px;
+    align-self:center;
 }
 .area-experts{
     display: flex;
-    padding: 30px;
-    margin-top:0;
-    margin-left: 200px;
     height: 400px;
     justify-content:center;
-    align-items: stretch;
+    align-self: center;
     flex-wrap: wrap;
-    width:80%;
-    
+    width:918px;
 }
-
 
 .topic{
     text-transform: uppercase;
     font-weight:bold;
-    color: rgb(68, 67, 67);
+    color: rgb(98, 98, 98);
     padding: 10px;
     font-size: 0.75rem;
     text-align: center;
@@ -371,7 +358,6 @@ button.learnm{
 }
 
 .amazingteam{
-    border: 1px solid red;
     width: 918px;
     display: flex;
     padding-top:30px ;
@@ -380,82 +366,80 @@ button.learnm{
     color: white;
     justify-content:center;
     font-family: 'Playfair Display', serif;
+    align-self: center;
+    text-transform: uppercase;
     
 
 }
 
 .linemeet{
-    border: 1px solid red;
     width: 918px;
     display: flex;
     color: white;
     justify-content:center;
+    align-self: center;
+ 
 
 }
 
 .line-three{
-    border: 1px solid red;
     width: 918px;
     display: flex;
     justify-content: center;
+    align-self: center;
     border-top: 1px solid rgb(203, 201, 201);
     width: 50px;
-    margin-left: 550px;
     margin-top: 3px;
 }
 .photo{
-    border: 1px solid red;
     width: 918px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     align-self: center;
-    flex-wrap: wrap;
-    width:70%;
     height: 300px;
 }
-p.box{
-   
-    height: 150px;
-    width:120px;
-    margin: 10px;
-    background-color: white;
-    justify-content: stretch;
-    justify-self: flex-end;
-    
-}
 
-/* div.first{
-    border:1px solid red;
+.photoes{
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    justify-self: stretch;
-} */
+    height: 200px;
+    width:170px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+img.box{
+    display: flex;
+    height: 190px;
+    width:170px;
+    background-color: white;
+}
+
 
 .title{
     color: white;
-    font-size: 0.75rem;
-    width:120px;
-    margin: 10px;
-    border: 1px solid white;
+    font-size: 0.6rem;
+    width:150px;
     text-align: center;
     justify-self: flex-start;
-    padding: 8px;
+    padding: 10px;
     font-family: 'Playfair Display', serif;
-    font-weight: 50;
+    letter-spacing: 1px;
+
 }
 .end{
-    border: 1px solid red;
     width: 918px;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 .join{
     color: white;
     padding-bottom: 20px;
     align-self: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 button.hiring{
     display: flex;
@@ -468,6 +452,7 @@ button.hiring{
     width:fit-content;
     align-self:center;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 
 /* sith section feedback */

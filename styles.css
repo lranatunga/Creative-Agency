@@ -31,9 +31,7 @@ header{
     align-items: center;
     object-fit: 80px;
 }
-/* .logo{
-   flex-wrap: wrap;
-} */
+
 .logoname{
     display: inline-flex;
     width: 80px;
@@ -114,57 +112,79 @@ button.learn{
 }
 
 /* second section story */
+
+
 .story{
-    display: flex;
+    /* width: 918px;
     height: 300px;
-    width:918px;
-    justify-content:space-between;
+    display:flex;
+    justify-content: center; */
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    
 }
 
 .largelogo{
-    height:200px;
+    /* height:200px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
+    width:459px; */
     border: 1px solid red;
+}
+
+.longstory{
+    border: 1px solid red;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:459px; */
 }
 
 .ourstory{
     border: 1px solid red;
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     padding: 0 0 30px 30px;  
     font-family: 'Playfair Display', serif;
-    color: gray;
+    color: gray; */
 }
 
 .storydescription{
     border: 1px solid red;
-    padding-left: 30px;
+    /* padding-left: 30px;
     padding-bottom: 0;
     color: grey;
     height: 75px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; */
 }
 
 .storydescriptiontwo{
     border: 1px solid red;
-    padding-left: 30px;
+    /* padding-left: 30px;
     padding-bottom: 30px;
     color: grey;
     height: 75px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; */
 }
 
 button.learnm{
     border: 1px solid red;
+    /* display:flex;
     border: 1px solid aqua;
     color: aqua;
     text-transform: uppercase;
     padding: 10px;
     background-color: transparent;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    width:fit-content;
+    align-self: center;
+    font-family: 'Roboto', sans-serif; */
 }
 
 /* third section video */

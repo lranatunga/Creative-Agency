@@ -39,6 +39,7 @@ header{
     align-content: center;
     align-items:flex-start;
 }
+
 .menu{
     display:flex;
     color: white;
@@ -250,11 +251,14 @@ button.learnm{
     justify-content: center;
     border-top: 1px solid gray;
     width:50px;
+    margin-top: 10px;
     align-self:center;
 }
 .area-experts{
     display: flex;
-    height: 400px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content:center;
     align-self: center;
     flex-wrap: wrap;
@@ -459,57 +463,91 @@ button.hiring{
 
 
 .contact{
-    border: 1px solid red;
-    width: 918px;
-    display: flex;
-    width:100%;
-    height: 500px;
-}
-
-.feedback{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    height: 500px;
+    width:100%;
+}
+
+.clientfeedback{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width:80%;
+}
+.feedback{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    /* align-items:flex-start; */
+    flex-basis: 50%;
+    margin-left:50px;
 }
 
 .goodnews{
     display: flex;
     font-family: 'Playfair Display', serif;
-    justify-content: center;
+    justify-content:flex-start;
     text-transform: uppercase;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: grey;
 }
 
 ::placeholder{
     font-family: 'Roboto', sans-serif;
-    height: 2rem;
-    padding: 2px;
+    font-size: 0.8rem;
+    padding: 10px 0 10px 20px;
 }
 
-form{
-    width:200px;
-}
-
-label{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    height: 2rem;
-    padding: 2px;
+input{
+    font-family: 'Roboto', sans-serif;
+    width:80%;
+    margin-bottom: 20px;
+    font-size: .0.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 textarea{
-    border: 1px solid red;
     height: 100px;
+    width: 80%;
 }
 
 button.submit{
     border: 1px solid aqua;
     color: aqua;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    border-top: 2px solid aqua;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.clients{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.happy{
+    border: 1px solid red;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.clientlogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -518,7 +556,7 @@ footer{
     background-image: url(./images/design-assets/bgk-footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 350px;
     width: 100%;
     color: white;
     display: flex;
@@ -528,88 +566,134 @@ footer{
 }
 
 .up{
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: center;
     width:918px;
-    margin-top: 100px;
+    margin-top: 50px;
+    height: 200px;
 }
 
 .down{
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     width:918px;
     font-family: 'Roboto', sans-serif;
     align-self: center;
     width:918px;
-
-
+    height: 150px;
+    margin-top: 50px;
 }
+
 .left{
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width:306px;
-    
-
 }
 
-.right{
-    border: 1px solid yellow;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:306px;
+.logoname-two{
+    display: inline-flex;
+    width: 50px;
+    height: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+}
+
+.note{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    width:80%;
 }
 
 .middle{
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width:306px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
-label.sub{
-    border: 1px solid white;
+
+.post{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
 }
-.news{
-    border: 1px solid yellow;
-    opacity: 0.2;
-    background-color:rgb(215, 224, 233);
+
+.map{
+    height: 20px;
 }
+
+.telephone{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding-top: 10px;
+}
+
 .address{
-    width: 271px;
-    height: 80px;
-    font-size: 14px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: #ffffff;
-    font-weight: 300;
+    font-size: 0.8rem;
+    color: white;
     font-family: "Roboto";
+    padding-left: 15px;
 
 }
 
 .tele{
-    width: 271px;
-    height: 23px;
-    font-size: 14px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: #ffffff;
-    font-weight: 300;
+    font-size: 0.8rem;
+    color: white;
     font-family: "Roboto";
+    padding-left: 15px;
 }
-.kit{
-    font-size: 15px;
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:306px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 100%;
+}
+label.sub{
+    border: 1px solid white;
+    width: 80%;
+    text-align: center;
+    padding: 5px;   
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
     letter-spacing: 1px;
-    line-height: 26px;
-    color: #ffffff;
-    font-weight: 900;
-    font-family: "Roboto";
+}
+
+.news{
+    background-color:white;
+    opacity: 0.5;
+    margin-left: 10px;
+    width: 20%;
+    height: 30px;
+}
+
+.kit{
+    font-size: 0.8rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+}
+
+.socialme{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
 .help{
@@ -619,15 +703,20 @@ label.sub{
     font-size: 1rem;
     color: white;
     font-family: 'Roboto', sans-serif;
-    word-spacing: 2rem;
+}
+    
 
+span{
+    display: inline;
+    margin-right: 50px;
+    text-transform: uppercase;
 }
 
 .copy{
     display:flex;
     width: 459px;
     height: 13px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     font-family: 'Roboto', sans-serif;
 }

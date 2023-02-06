@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    
 }
 /* first section header */
 
@@ -256,13 +254,14 @@ button.learnm{
 }
 .area-experts{
     display: flex;
-    height: 300px;
+    height: 350px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     justify-content:center;
     align-self: center;
     flex-wrap: wrap;
     width:918px;
+    border: 1px solid red;
 }
 
 .topic{
@@ -286,64 +285,59 @@ button.learnm{
 }
 
 .web{
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    flex-basis:300px;
+    border-right: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    flex-basis:250px;
     text-align: center;
     flex-grow: 1;
-    padding: 20px;
-    margin: 0;
+    padding: 0 20px 20px 20px;
     order:1;
 
 }
 
 .branding{
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    flex-basis:300px;
+    border-right:1px solid rgb(218, 218, 218);
+    border-bottom:1px solid rgb(218, 218, 218);
+    flex-basis:250px;
     text-align: center;
     flex-grow: 1;
-    padding: 20px;
-    margin: 0;
+    padding: 0 20px 20px 20px;
     order:2;
 }
 
 .mob{
-    border-bottom: 1px solid gray;
-    flex-basis:300px;
+    border-bottom:1px solid rgb(218, 218, 218);
+    flex-basis:250px;
     text-align: center;
     flex-grow: 1;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     margin: 0;
     order:3;
 }
 
 .search{
-    border-right: 1px solid gray;
-    flex-basis:300px;
+    border-right:1px solid rgb(218, 218, 218);
+    flex-basis:250px;
     text-align: center;
     flex-grow: 1;
-    padding: 20px;
-    margin: 0;
+    padding: 20px 20px 0 20px;
     order:4;
 }
 
 .game{
-    border-right: 1px solid gray;
-    flex-basis:300px;
+    border-right: 1px solid rgb(218, 218, 218);
+    flex-basis:250px;
     text-align: center;
     flex-grow: 1;
-    padding: 20px;
-    margin: 0;
+    padding: 20px 20px 0 20px;
     order:5;
 }
 
 .love{ 
-    flex-basis:300px;
+    flex-basis:250px;
     text-align: center; 
     flex-grow: 1;
-    padding: 20px;
-    margin: 0;
+    padding: 20px 20px 0 20px;
     order:6;
     
 }
@@ -459,7 +453,7 @@ button.hiring{
     font-size: 0.8rem;
 }
 
-/* sith section feedback */
+/* sixth section feedback */
 
 
 .contact{
@@ -470,19 +464,16 @@ button.hiring{
 }
 
 .clientfeedback{
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    width:80%;
+    width:918px;
+    margin-top: 20px;
 }
 .feedback{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    /* align-self: center; */
-    /* align-items:flex-start; */
     flex-basis: 50%;
     margin-left:50px;
 }
@@ -492,9 +483,10 @@ button.hiring{
     font-family: 'Playfair Display', serif;
     justify-content:flex-start;
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     color: grey;
+    font-size: 1.1rem;
 }
 
 ::placeholder{
@@ -510,11 +502,13 @@ input{
     font-size: .0.8rem;
     padding-top: 5px;
     padding-bottom: 5px;
+    border: 1px solid rgb(218, 218, 218);
 }
 
 textarea{
     height: 100px;
     width: 80%;
+    border: 1px solid rgb(218, 218, 218);
 }
 
 button.submit{
@@ -531,23 +525,115 @@ button.submit{
 }
 
 .clients{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
 }
 
 .happy{
-    border: 1px solid red;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     color: gray;
+    padding-top: 30px;
+    font-size: 1.1rem;
 }
 
 .clientlogo{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.group-one{
+    display: inline-flex;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+img.zara{
+    width: 30%;
+    margin-right: 50px;
+    
+}
+
+img.mango{
+    width: 30%;
+}
+
+.group-two{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+img.barneys{
+    width: 30%;
+    height: 30px;
+    margin-right:50px ;
+}
+
+img.gucci{
+    width: 30%;
+    height: 15px;
+    align-self:flex-end;
+}
+
+.group-three{
+    display: inline-flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+img.calvin{
+    width: 30%;
+    height: 30px;
+    margin-right:50px ;
+}
+
+img.nike{
+    width: 25%;
+    height: 30px;
+    margin-right:50px;
+}
+
+.group-four{
+    display: inline-flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+img.Converse{
+    width: 25%;
+    height: 50px;
+    margin-right:50px;
+    margin-left: 10px;
+}
+
+img.puma{
+    width: 25%;
+    height: 30px;
+    margin-left:10px;
+    align-self:flex-end;
+}
+
+.group-five{
+    display: inline-flex;
+}
+
+img.levi{
+    width: 20%;
+    height: 30px;
+    margin-right:50px;
+    margin-left: 10px; 
+    align-self:flex-end;
+}
+
+img.bill{
+    width: 25%;
+    height: 50px;
+    margin-right:50px;
+    margin-left: 30px;
 }
 
 

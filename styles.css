@@ -27,7 +27,7 @@ header{
 .logo-name{
     justify-content: center;
     align-items: center;
-    object-fit: 80px;
+    object-fit:15%;
 }
 
 .logoname{
@@ -261,7 +261,6 @@ button.learnm{
     align-self: center;
     flex-wrap: wrap;
     width:918px;
-    border: 1px solid red;
 }
 
 .topic{
@@ -648,7 +647,8 @@ footer{
     display: flex;
     flex-direction: column;
     background-origin: border-box;
-    margin-top: 100px;
+    margin-top:50px;
+    
 }
 
 .up{
@@ -667,9 +667,9 @@ footer{
     width:918px;
     font-family: 'Roboto', sans-serif;
     align-self: center;
-    width:918px;
     height: 150px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .left{
@@ -762,7 +762,7 @@ label.sub{
 
 .news{
     background-color:white;
-    opacity: 0.5;
+    opacity: 0.2;
     margin-left: 10px;
     width: 20%;
     height: 30px;
@@ -806,3 +806,22 @@ span{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* media quaries for ipads */
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+      width:100%;
+    }
+  }
+
+
+/* media quaries for mobile*/
+
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: rgb(58, 237, 216);
+    }
+  }
+

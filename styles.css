@@ -11,28 +11,32 @@ header{
     background-image: url(./images/design-assets/bgk-header.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     background-origin: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
+
 .logomenu{
     display:flex;
     flex-direction: row;
-    height: 50px;
-    align-items: flex-start;
-    width:918px;
-}
-.logo-name{
-    justify-content: center;
+    height: 10%;
     align-items: center;
-    object-fit: 80px;
+    justify-content: space-around;
+    width:80%;
+}
+
+.logo-name{
+    display: flex;
 }
 
 .logoname{
-    display: inline-flex;
-    width: 80px;
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
     justify-content: center;
     align-content: center;
     align-items:flex-start;
@@ -42,13 +46,13 @@ header{
     display:flex;
     color: white;
     list-style: none;
-    padding-top:10px;
-    gap:30px;
-    font-size: 0.9rem; 
+    gap:20px;
+    font-size: 0.6rem; 
     justify-content:flex-end;
+    align-items: center;
     font-family: 'Playfair Display', serif;
-    width:758px;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -61,39 +65,39 @@ a:visited{
     color: aqua;
 }
 .description{
-    width:918px;
+    width:80%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 .heading{
     display:flex;
     height: 80px;
     color: white;
     text-transform:capitalize;
+    word-spacing: 5px;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
-
 }
+
 .lineone{
-    display: flex;
     border-top: 1px solid aqua;
     width:50px;
     justify-content: center;
     align-self:center;
-
 }
+
 .introduction{
-    display: flex;
     text-align: center;
     justify-content: center;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
 button.learn{
     display:flex;
     border: 1px solid aqua;
@@ -104,62 +108,51 @@ button.learn{
     margin-top: 10px;
     width:fit-content;
     align-self: center;
-    margin-bottom: 150px;
     font-family: 'Roboto', sans-serif;
-    
-
 }
 
 /* second section story */
 
-.section-two{
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-}
 .story{
     display: flex;
-    flex-direction: row;
-    width:918px;
+    justify-content: center;
+    align-items: center;
     align-self: center;
     height: 300px;
-    justify-content: flex-end;
-  
+    padding-left: 100px;
 }
 
 .largelogo{
     height:200px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     padding-top: 50px;
-    padding-right: 20px;
+    padding-right: 70px;
 }
 
 .longstory{
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
-    width:518px;
 }
 
 .ourstory{
     text-transform: uppercase;
     padding-top: 30px;  
+    padding-bottom: 10px;
     font-family: 'Playfair Display', serif;
     color: rgb(107, 107, 107);
 }
 
 .storydescription{
     color: grey;
-    height: 75px;
+    height: 60px;
+    padding-bottom: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
 }
 
 .storydescriptiontwo{
     color: grey;
-    height: 75px;
+    height: 60px;
+    padding-bottom: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
 }
@@ -174,8 +167,8 @@ button.learnm{
     width:fit-content;
     align-self: flex-start;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 50px;
 }
+
 
 /* third section video */
 
@@ -190,28 +183,23 @@ button.learnm{
     align-items: center;
     display: flex;
     flex-direction: column;
-    
 }
-.play-image{
-    width: 918px;
-    display: flex;
-    flex-direction: column;
-}
+
 .playimage{
-    margin-top: 20px;
     height: 70px;
     justify-content: center;
-    align-self:center;
-    
+    align-self:center; 
 }
+
 .watch{
     color: white;
     text-transform: uppercase;
     justify-content: center;
     align-self:center;
     padding-top:20px;
-    gap:20px;
+    word-spacing:5px;
     font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
 }
 
 /* forth section experties */
@@ -228,9 +216,8 @@ button.learnm{
     display: flex;
     justify-content: center;
     font-family:'Playfair Display', serif;
-    padding-top: 10px;
+    padding-top: 20px;
     color: rgb(107, 107, 107);
-    width: 918px;
     align-self: center;
 }
 
@@ -241,27 +228,29 @@ button.learnm{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     align-self: center;
-    width:918px;
+    padding-bottom: 5px;
 }
 
+
 .line-two{
-    display: flex;
-    justify-content: center;
     border-top: 1px solid gray;
     width:50px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
     align-self:center;
+    float: center;
 }
+
 .area-experts{
     display: flex;
-    height: 350px;
+    flex-direction: row;
+    align-self: center;
+    width:70%;
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 100px;
-    justify-content:center;
-    align-self: center;
-    flex-wrap: wrap;
-    width:918px;
-    border: 1px solid red;
+    height:350px;
+    justify-content:stretch;
 }
 
 .topic{
@@ -271,7 +260,7 @@ button.learnm{
     padding: 10px;
     font-size: 0.75rem;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -350,13 +339,14 @@ button.learnm{
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-origin: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .amazingteam{
-    width: 918px;
     display: flex;
     padding-top:30px ;
     padding-bottom: 0;
@@ -366,12 +356,10 @@ button.learnm{
     font-family: 'Playfair Display', serif;
     align-self: center;
     text-transform: uppercase;
-    
-
 }
 
 .linemeet{
-    width: 918px;
+    /* width: 918px; */
     display: flex;
     color: white;
     justify-content:center;
@@ -381,7 +369,6 @@ button.learnm{
 }
 
 .line-three{
-    width: 918px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -390,7 +377,6 @@ button.learnm{
     margin-top: 3px;
 }
 .photo{
-    width: 918px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -427,7 +413,6 @@ img.box{
 
 }
 .end{
-    width: 918px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -454,28 +439,22 @@ button.hiring{
 }
 
 /* sixth section feedback */
-
-
-.contact{
+/* .contact{
     display: flex;
-    flex-direction: column;
-    height: 500px;
-    width:100%;
-}
-
+    width:80%;
+} */
 .clientfeedback{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
-    width:918px;
+    height: 350px;
     margin-top: 20px;
+    justify-content: center;
+    /* width: 80%; */
 }
+
 .feedback{
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    margin-left:50px;
+    width: 30%;
 }
 
 .goodnews{
@@ -527,7 +506,7 @@ button.submit{
 .clients{
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    width: 35%;
 }
 
 .happy{
@@ -638,6 +617,7 @@ img.bill{
 
 
 /* seventh section footer */
+
 footer{
     background-image: url(./images/design-assets/bgk-footer.png);
     background-repeat: no-repeat;
@@ -656,27 +636,27 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    width:918px;
+    width:70%;
     margin-top: 50px;
     height: 200px;
 }
 
 .down{
     display: flex;
-    justify-content: center;
-    width:918px;
+    justify-content: flex-start;
+    width:70%;
     font-family: 'Roboto', sans-serif;
     align-self: center;
-    width:918px;
     height: 150px;
     margin-top: 50px;
+    margin-left: 100px;
 }
 
 .left{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:306px;
+    width:30%;
 }
 
 .logoname-two{
@@ -699,7 +679,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:306px;
+    width:30%;
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
@@ -741,7 +721,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:306px;
+    width:30%;
 }
 
 .social{
@@ -784,7 +764,6 @@ label.sub{
 
 .help{
     display:flex;
-    width: 459px;
     height: 13px;
     font-size: 1rem;
     color: white;
@@ -800,9 +779,59 @@ span{
 
 .copy{
     display:flex;
-    width: 459px;
     height: 13px;
     font-size: 0.8rem;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
+/* media quaries */
+
+
+/* large screens and desktops */
+  @media only screen and (max-width: 1200px) {
+    body {
+      /* background-color: rgb(246, 225, 64); */
+    }
+  }
+  
+  /* laptops and small screens*/
+  @media only screen and (max-width: 1024px) {
+    body {
+      /* background-color: rgb(233, 42, 42); */
+    }
+  }
+
+  /* tablets */
+  @media only screen and (max-width: 768px) {
+    body {
+      /* background-color: rgb(17, 251, 56); */
+    }
+  }
+
+  /* mobiles */
+  @media only screen and (max-width: 480px) {
+    body {
+        /* background-color: rgb(25, 111, 217); */
+      }
+    
+    .logomenu{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    
+    .menu{
+        display:flex;
+        flex-direction: column;
+    }
+    .description{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    }

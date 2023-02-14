@@ -20,26 +20,23 @@ header{
     align-items: center;
 }
 
-.logomenu{
-    display:flex;
-    flex-direction: row;
-    height: 10%;
-    align-items: center;
-    justify-content: space-around;
-    width:80%;
-}
-
 .logo-name{
     display: flex;
+}
+.logo{
+    margin-top: 15px;
 }
 
 .logoname{
     width: 50%;
-    height: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
     justify-content: center;
     align-content: center;
-    align-items:flex-start;
+    align-items:flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(52, 210, 238);
 }
 
 .menu{
@@ -47,35 +44,32 @@ header{
     color: white;
     list-style: none;
     gap:20px;
-    font-size: 0.6rem; 
+    font-size: 0.7rem; 
     justify-content:flex-end;
     align-items: center;
     font-family: 'Playfair Display', serif;
+    padding-top: 10px;
 }
 
 a{
     text-decoration: none;
     color: white;
 }
+
 a:hover{
     cursor: pointer;
     color: lightseagreen;
 }
+
 a:visited{
     color: aqua;
 }
-.description{
-    width:80%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 150px;
-}
+
 .heading{
     display:flex;
     height: 80px;
     color: white;
     text-transform:capitalize;
-    word-spacing: 5px;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
@@ -111,26 +105,21 @@ button.learn{
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 /* second section story */
 
-.story{
+
+.mission{
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-self: center;
-    height: 300px;
-    padding-left: 100px;
 }
+
 
 .largelogo{
     height:200px;
     padding-top: 50px;
     padding-right: 70px;
-}
-
-.longstory{
-    display: flex;
-    flex-direction:column;
 }
 
 .ourstory{
@@ -178,6 +167,8 @@ button.learnm{
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     background-origin: border-box;
     justify-content: center;
     align-items: center;
@@ -189,6 +180,10 @@ button.learnm{
     height: 70px;
     justify-content: center;
     align-self:center; 
+}
+
+.playimage:hover{
+    cursor: pointer;
 }
 
 .watch{
@@ -207,7 +202,6 @@ button.learnm{
 
 .experties{
     display:flex;
-    height:500px;
     flex-direction: column;
     width: 100%;
 }
@@ -241,17 +235,6 @@ button.learnm{
     float: center;
 }
 
-.area-experts{
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width:70%;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    height:350px;
-    justify-content:stretch;
-}
 
 .topic{
     text-transform: uppercase;
@@ -273,70 +256,13 @@ button.learnm{
     
 }
 
-.web{
-    border-right: 1px solid rgb(218, 218, 218);
-    border-bottom: 1px solid rgb(218, 218, 218);
-    flex-basis:250px;
-    text-align: center;
-    flex-grow: 1;
-    padding: 0 20px 20px 20px;
-    order:1;
 
-}
-
-.branding{
-    border-right:1px solid rgb(218, 218, 218);
-    border-bottom:1px solid rgb(218, 218, 218);
-    flex-basis:250px;
-    text-align: center;
-    flex-grow: 1;
-    padding: 0 20px 20px 20px;
-    order:2;
-}
-
-.mob{
-    border-bottom:1px solid rgb(218, 218, 218);
-    flex-basis:250px;
-    text-align: center;
-    flex-grow: 1;
-    padding: 0 20px 20px 20px;
-    margin: 0;
-    order:3;
-}
-
-.search{
-    border-right:1px solid rgb(218, 218, 218);
-    flex-basis:250px;
-    text-align: center;
-    flex-grow: 1;
-    padding: 20px 20px 0 20px;
-    order:4;
-}
-
-.game{
-    border-right: 1px solid rgb(218, 218, 218);
-    flex-basis:250px;
-    text-align: center;
-    flex-grow: 1;
-    padding: 20px 20px 0 20px;
-    order:5;
-}
-
-.love{ 
-    flex-basis:250px;
-    text-align: center; 
-    flex-grow: 1;
-    padding: 20px 20px 0 20px;
-    order:6;
-    
-}
 
 /* fifth section cards */
 
 
 .cards{
     background-image: url(./images/design-assets/bgk-header.png);
-    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -359,7 +285,6 @@ button.learnm{
 }
 
 .linemeet{
-    /* width: 918px; */
     display: flex;
     color: white;
     justify-content:center;
@@ -439,16 +364,13 @@ button.hiring{
 }
 
 /* sixth section feedback */
-/* .contact{
-    display: flex;
-    width:80%;
-} */
+
+
+
 .clientfeedback{
     display: flex;
-    height: 350px;
     margin-top: 20px;
     justify-content: center;
-    /* width: 80%; */
 }
 
 .feedback{
@@ -632,13 +554,11 @@ footer{
 }
 
 .up{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width:70%;
+    align-self: center;
     margin-top: 50px;
-    height: 200px;
 }
 
 .down{
@@ -649,37 +569,43 @@ footer{
     align-self: center;
     height: 150px;
     margin-top: 50px;
-    margin-left: 100px;
 }
 
 .left{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:30%;
 }
 
-.logoname-two{
-    display: inline-flex;
-    width: 50px;
-    height: 40px;
+.logo-name-two{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:80%;
+}
+
+.second-logoname{
     margin-top: 20px;
+    padding-left: 10px;
     justify-content: center;
     align-content: center;
-    align-items:flex-start;
+    align-items:flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(52, 210, 238);
+    width: 50%;
 }
 
 .note{
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
-    width:80%;
+    width:90%;
 }
 
 .middle{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:30%;
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
@@ -721,7 +647,6 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:30%;
 }
 
 .social{
@@ -732,7 +657,6 @@ footer{
 }
 label.sub{
     border: 1px solid white;
-    width: 80%;
     text-align: center;
     padding: 5px;   
     font-family: 'Roboto', sans-serif;
@@ -744,7 +668,7 @@ label.sub{
     background-color:white;
     opacity: 0.5;
     margin-left: 10px;
-    width: 20%;
+    width: 10%;
     height: 30px;
 }
 
@@ -785,47 +709,151 @@ span{
     font-family: 'Roboto', sans-serif;
 }
 
+button:hover{
+    cursor: pointer;
+    border-color: blue;
+}
+
+
+
+
+
+
 /* media quaries */
 
 
 /* large screens and desktops */
-  @media only screen and (max-width: 1200px) {
-    body {
-      /* background-color: rgb(246, 225, 64); */
+@media only screen and (min-width: 1025px) {
+   
+    .logomenu{
+        display:flex;
+        flex-direction: row;
+        height: 10%;
+        align-items: center;
+        justify-content: space-around;
+        width:80%;
     }
+
+    .menu{
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .description{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    .heading{
+        word-spacing: 5px;
+        font-size: 1.6rem;
+    }
+    
+    .introduction{
+        font-size: 1rem;
+    }
+
+
+    .story{
+        border:1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center; 
+        height: 300px;
+        padding-left: 100px;
+        width:80%;;
+    }
+
+    .area-experts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width:80%;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    .web{
+        border-right: 1px solid rgb(218, 218, 218);
+        border-bottom: 1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        flex-grow: 1;
+        padding: 0 20px 20px 20px;
+        order:1;
+    
+    }
+    
+    .branding{
+        border-right:1px solid rgb(218, 218, 218);
+        border-bottom:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        flex-grow: 1;
+        padding: 0 20px 20px 20px;
+        order:2;
+    }
+    
+    .mob{
+        border-bottom:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        flex-grow: 1;
+        padding: 0 20px 20px 20px;
+        margin: 0;
+        order:3;
+    }
+    
+    .search{
+        border-right:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        flex-grow: 1;
+        padding: 20px 20px 0 20px;
+        order:4;
+    }
+    
+    .game{
+        border-right: 1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        flex-grow: 1;
+        padding: 20px 20px 0 20px;
+        order:5;
+    }
+    
+    .love{ 
+        flex-basis:250px;
+        text-align: center; 
+        flex-grow: 1;
+        padding: 20px 20px 0 20px;
+        order:6;
+        
+    }
+    .cards{
+        height: 500px;
+    }
+
   }
   
+
+
+
+
+
+
   /* laptops and small screens*/
-  @media only screen and (max-width: 1024px) {
-    body {
-      /* background-color: rgb(233, 42, 42); */
-    }
-  }
-
-  /* tablets */
-  @media only screen and (max-width: 768px) {
-    body {
-      /* background-color: rgb(17, 251, 56); */
-    }
-  }
-
-  /* mobiles */
-  @media only screen and (max-width: 480px) {
-    body {
-        /* background-color: rgb(25, 111, 217); */
-      }
+  @media only screen and (min-width:833px) and (max-width: 1024px) {
     
     .logomenu{
         display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    
-    .menu{
-        display:flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: 10%;
+        align-items: center;
+        justify-content: space-around;
+        width:80%;
     }
     .description{
         width:80%;
@@ -834,4 +862,746 @@ span{
         margin-bottom: 150px;
     }
 
+    .heading{
+        word-spacing: 5px;
     }
+    .story{
+        border:1px solid white;
+        height: 300px;
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .area-experts{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        height:350px;
+        justify-content:center;
+        width: 90%;
+    }
+
+    .web{
+        border-right: 1px solid rgb(218, 218, 218);
+        border-bottom: 1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+    
+    .branding{
+        border-right:1px solid rgb(218, 218, 218);
+        border-bottom:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .mob{
+        border-bottom:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .search{
+        border-right:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .game{
+        border-right:1px solid rgb(218, 218, 218);
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .love{ 
+        flex-basis:250px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+        .cards{
+        height: 500px;
+    }
+
+    .middle{
+        width:100%;
+    }
+
+    .news{
+        width:12%;
+    }
+
+    .address{
+        font-size: 0.6rem;
+    }
+    
+    .tele{
+        font-size: 0.6rem;
+    }
+
+    .note{
+        font-size: 0.6rem;
+    }
+
+    label.sub{
+        font-size: 0.6rem;
+    }
+
+    .help{
+        font-size:0.6rem;
+    }
+
+    .copy{
+        font-size:0.6rem;
+    }
+
+    } 
+
+/* ipads */
+@media only screen and (min-width:701px) and (max-width: 832px) {
+   
+
+    .logomenu{
+        display:flex;
+        flex-direction: row;
+        height: 10%;
+        align-items: center;
+        justify-content: space-around;
+        width:90%;
+    }
+    .description{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    .heading{
+        word-spacing: 5px;
+    }
+    .story{
+        height: 300px;
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .area-experts{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-self: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .web{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+    
+    .branding{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .mob{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .search{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .game{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .love{ 
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:300px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+
+    .cards{
+        height: 650px;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+    }
+
+    button.hiring{
+        margin-bottom: 20px;
+    }
+    .feedback{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .clients{
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .second-logoname{
+        width: 50%;
+        margin-top: 20px;
+        padding-left:5px;
+        font-size: 1.2rem;
+    }
+
+    .address{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+    
+    .tele{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+
+    .note{
+        font-size: 0.6rem;
+    }
+
+    label.sub{
+        font-size: 0.6rem;
+    }
+
+    .help{
+        font-size:0.6rem;
+    }
+
+    .copy{
+        font-size:0.6rem;
+    }
+
+}
+
+
+
+
+
+
+  /* tablets */
+  @media only screen and (min-width:481px) and (max-width: 700px) {
+    
+
+    header{
+        flex-direction: row;
+        height: 350px;
+    }
+
+    .logomenu{
+        display:flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .logoname{
+        font-size: 1.7rem;
+    }
+
+    .menu{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .description{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading{
+        word-spacing: 5px;
+    }
+
+  .story{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .largelogo{
+        height:100px;
+        padding: 0;
+    }
+
+    .longstory{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ourstory{
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+
+
+    button.learnm{
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .area-experts{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top:10px;
+        margin-bottom: 10px;
+
+    }
+    .web{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+    
+    .branding{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .mob{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .search{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .game{
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    
+    .love{ 
+        border: 1px solid rgb(218, 218, 218);
+        flex-basis:240px;
+        text-align: center;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+
+    .cards{
+        height: 650px;
+    }
+
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+    }
+        button.hiring{
+        margin-bottom: 20px;
+    }
+
+    .clientfeedback{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 650px;
+    }
+
+    .feedback{
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .goodnews{
+        font-size: 0.8rem;
+    }
+
+    .happy{
+        font-size:0.8rem;
+    }
+
+    .clients{
+        width: 80%;
+        margin-left: 100px;
+        margin-bottom: 0;
+    }
+
+    footer{
+        height: 500px;
+    }
+    .up{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .second-logoname{
+        width: 50%;
+        margin-top: 20px;
+        padding-left:5px;
+        font-size: 1.2rem;
+    }
+
+    .address{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+    
+    .tele{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+
+    .note{
+        font-size: 0.6rem;
+    }
+
+    label.sub{
+        font-size: 0.6rem;
+    }
+
+    .help{
+        font-size:0.6rem;
+    }
+
+    .copy{
+        font-size:0.6rem;
+    }
+
+    span{
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* mobiles */
+  @media only screen and (max-width: 480px) {
+
+
+    header{
+        flex-direction: row;
+        height: 350px;
+    }
+
+    .logomenu{
+        display:flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 5px;
+    }
+
+    .logo{
+        margin-top: 15px;
+    }
+    
+    
+    .logoname{
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .menu{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .description{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .heading{
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .story{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .largelogo{
+        height:100px;
+        padding: 0;
+    }
+
+    .longstory{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ourstory{
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+
+    .storydescription{
+        font-size: 0.7rem;
+    }
+
+    .storydescriptiontwo{
+        font-size: 0.7rem;
+    }
+    button.learnm{
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .line{
+        font-size: 0.7rem;
+    }
+
+    .area-experts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 60%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .web{
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .branding{
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .mob{
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .search{
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .game{
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .love{ 
+        border: 1px solid rgb(218, 218, 218);
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .amazingteam{
+        font-size: 1rem;
+    }
+
+    .linemeet{
+        font-size: 0.8rem;
+    }
+
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photoes{
+        height: 130px;
+        width:100px;;
+    }
+
+    img.box{
+        width:100px;
+    }
+
+
+    .title{
+        font-size: 0.4rem;
+        width:100px;
+    }
+
+    .join{
+        font-size: 0.8rem;
+    }
+
+        button.hiring{
+        margin-bottom: 20px;
+        font-size: 0.6rem;
+    }
+
+    .clientfeedback{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .feedback{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .goodnews{
+        font-size: 0.8rem;
+    }
+
+    .happy{
+        font-size:0.8rem;
+    }
+
+    .clients{
+        width: 80%;
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
+    footer{
+        height: 500px;
+    }
+
+    .up{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+   
+    .second-logoname{
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+   
+    .address{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+    
+    .tele{
+        font-size: 0.6rem;
+        padding-left:2px;
+    }
+
+    .note{
+        font-size: 0.6rem;
+    }
+
+    label.sub{
+        font-size: 0.6rem;
+    }
+
+    .socialme{
+        width:50%;
+    }
+
+    .down{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+    }
+
+    span{
+        margin-right: 20px;
+    }
+
+    .help{
+        font-size:0.6rem;
+    }
+
+    .copy{
+        font-size:0.6rem;
+    }
+
+    .place{
+        font-size: 0.6rem;
+    }
+
+    .kit{
+        font-size: 0.6rem;
+    }
+
+    
+}
